@@ -1,43 +1,42 @@
-
-```md
 # 🛠️ Crypto Tracker API — Backend (Node.js + Express + MongoDB)
 
-This is the **backend API** for the Crypto Tracker app, built with **Express.js**, **MongoDB Atlas**, and **CoinGecko API**.
+This is the **backend API** for the Crypto Tracker app, built with **Express.js**, **MongoDB Atlas**, and the **CoinGecko API**.
 
-🔗 **Live API URL**: [https://crypto-tracker-server-3omc.onrender.com/api](https://crypto-tracker-server-3omc.onrender.com/api)
+🔗 **Live API**: [https://crypto-tracker-server-3omc.onrender.com/api](https://crypto-tracker-server-3omc.onrender.com/api)
 
 ---
 
 ## 🔧 API Endpoints
 
-| Method | Endpoint                  | Description                        |
-|--------|---------------------------|------------------------------------|
-| GET    | `/api/coins`              | Get top 10 coins from DB           |
-| POST   | `/api/history`            | Save CoinGecko snapshot to DB      |
-| GET    | `/api/history/:coinId`    | Get historical data (for charts)   |
+| Method | Endpoint                 | Description                      |
+|--------|--------------------------|----------------------------------|
+| `GET`  | `/api/coins`             | Get top 10 coins from DB         |
+| `POST` | `/api/history`           | Save CoinGecko snapshot to DB    |
+| `GET`  | `/api/history/:coinId`   | Get historical data for a coin   |
 
-> Data source: [CoinGecko API](https://www.coingecko.com/en/api/documentation)
+> 📡 Data Source: [CoinGecko API Docs](https://www.coingecko.com/en/api/documentation)
 
 ---
 
-## 🧠 Cron Job
+## ⏱️ Cron Job
 
-- Runs every hour using `node-cron`
-- Fetches CoinGecko data
-- Overwrites `CurrentData` collection
-- Appends to `HistoryData` collection
+- Runs every **1 hour** using `node-cron`
+- Fetches top 10 coins from CoinGecko
+- 🔁 Overwrites `CurrentData` collection
+- 📊 Appends to `HistoryData` for charting
 
 ---
 
 ## 📦 Tech Stack
 
-- Node.js
-- Express.js
-- MongoDB Atlas + Mongoose
-- Axios
-- node-cron
-- express-async-handler
-- dotenv + cors
+- **Node.js**
+- **Express.js**
+- **MongoDB Atlas** with **Mongoose**
+- **Axios**
+- **node-cron**
+- **dotenv**
+- **cors**
+- **express-async-handler**
 
 ---
 
@@ -48,3 +47,30 @@ Create a `.env` file in `/server`:
 ```env
 PORT=8000
 MONGO_URI=mongodb+srv://<your-mongo-uri>
+
+📁 Folder Structure
+
+
+/server
+├── controllers/
+├── models/
+├── routes/
+├── utils/
+├── config/
+├── middlewares/
+├── .env
+└── server.js
+
+
+🚀 Run Locally
+
+git clone https://github.com/your-name/crypto-tracker-backend.git
+cd server
+npm install
+npm start
+
+
+🤝 Author
+Made with ❤️ by UVAISH NASIR
+
+Frontend Live: https://crypto-tracker-dun-gamma.vercel.app
