@@ -1,10 +1,4 @@
 
----
-
-## ✅ README for **Backend Repo** (`https://crypto-tracker-server-3omc.onrender.com/api`)
-
-> 📁 Place this in: `/server/README.md`
-
 ```md
 # 🛠️ Crypto Tracker API — Backend (Node.js + Express + MongoDB)
 
