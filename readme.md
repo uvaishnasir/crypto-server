@@ -24,6 +24,15 @@ This is the **backend API** for the Crypto Tracker app, built with **Express.js*
 - Fetches top 10 coins from CoinGecko
 - 🔁 Overwrites `CurrentData` collection
 - 📊 Appends to `HistoryData` for charting
+  
+#Cron Job Status
+<img width="1712" height="847" alt="image" src="https://github.com/user-attachments/assets/0bb15e6b-4e5d-4512-a605-b12a229b6274" />
+
+#Screenshot of Database sample records.
+<img width="1901" height="801" alt="image" src="https://github.com/user-attachments/assets/efa7c292-afe5-4b14-8491-2d806c89c2c9" />
+
+<img width="1911" height="821" alt="image" src="https://github.com/user-attachments/assets/01f43124-a33c-4a7e-a2d8-df852dbf50fb" />
+
 
 ---
 
@@ -48,8 +57,8 @@ Create a `.env` file in `/server`:
 PORT=8000
 MONGO_URI=mongodb+srv://<your-mongo-uri>
 
-📁 Folder Structure
-
+```
+## 📁 Folder Structure
 
 /server
 ├── controllers/
@@ -62,7 +71,7 @@ MONGO_URI=mongodb+srv://<your-mongo-uri>
 └── server.js
 
 
-🚀 Run Locally
+## 🚀 Run Locally
 
 git clone https://github.com/your-name/crypto-tracker-backend.git
 cd server
