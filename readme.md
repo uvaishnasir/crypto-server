@@ -60,6 +60,7 @@ MONGO_URI=mongodb+srv://<your-mongo-uri>
 ```
 ## 📁 Folder Structure
 
+```
 /server
 ├── controllers/
 ├── models/
@@ -70,14 +71,17 @@ MONGO_URI=mongodb+srv://<your-mongo-uri>
 ├── .env
 └── server.js
 
+```
 
 ## 🚀 Run Locally
 
+```
 git clone https://github.com/your-name/crypto-tracker-backend.git
 cd server
 npm install
 npm start
 
+```
 
 🤝 Author
 Made with ❤️ by UVAISH NASIR
